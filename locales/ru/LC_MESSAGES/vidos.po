@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+
+msgid "Download"
+msgstr "Скачать"
+
+msgid "History"
+msgstr "История"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Theme Mode"
+msgstr "Цветовая тема"
+
+msgid "Toggle Theme"
+msgstr "Переключить тему"
+
+msgid "Download single videos or full playlists in high quality."
+msgstr "Скачивание отдельных видео или плейлистов в высоком качестве."
+
+msgid "Paste video or playlist link..."
+msgstr "Ссылка на видео или плейлист..."
+
+msgid "Analyze"
+msgstr "Анализ"
+
+msgid "Analyzing URL..."
+msgstr "Анализ ссылки..."
+
+msgid "Active Downloads"
+msgstr "Активные загрузки"
+
+msgid "Please enter a valid URL."
+msgstr "Введите корректный URL-адрес."
+
+msgid "Failed to analyze URL: {}"
+msgstr "Ошибка анализа URL: {}"
+
+msgid "Download task added to queue."
+msgstr "Задача добавлена в очередь загрузки."
+
+msgid "Starting playlist download ({} items)."
+msgstr "Начало загрузки плейлиста ({} видео)."
+
+msgid "No videos selected."
+msgstr "Не выбрано ни одного видео."
+
+msgid "1080p (Best MP4)"
+msgstr "1080p (Лучшее качество, MP4)"
+
+msgid "720p (HD MP4)"
+msgstr "720p (HD, MP4)"
+
+msgid "480p (SD MP4)"
+msgstr "480p (SD, MP4)"
+
+msgid "Audio Only (MP3)"
+msgstr "Только аудио (MP3)"
+
+msgid "Audio Only (M4A)"
+msgstr "Только аудио (M4A)"
+
+msgid "Start Download"
+msgstr "Скачать"
+
+msgid "Select All Videos"
+msgstr "Выбрать все"
+
+msgid "{} Videos Available"
+msgstr "Доступно видео: {}"
+
+msgid "Download Selected ({})"
+msgstr "Скачать выбранное ({})"
+
+msgid "Download History"
+msgstr "История загрузок"
+
+msgid "{} items downloaded"
+msgstr "Загружено элементов: {}"
+
+msgid "No downloads recorded yet"
+msgstr "Нет записей о загрузках"
+
+msgid "Clear History"
+msgstr "Очистить историю"
+
+msgid "Show in Folder"
+msgstr "Показать в папке"
+
+msgid "File moved or deleted"
+msgstr "Файл перемещен или удален"
+
+msgid "Your download history is empty"
+msgstr "История загрузок пуста"
+
+msgid "Download Directory"
+msgstr "Папка для загрузок"
+
+msgid "Select the default folder where downloaded media files will be saved."
+msgstr "Папка по умолчанию для сохранения загруженных медиафайлов."
+
+msgid "Browse"
+msgstr "Обзор"
+
+msgid "Select Download Folder"
+msgstr "Выбор папки для загрузок"
+
+msgid "System Requirements"
+msgstr "Системные требования"
+
+msgid "This tool must be installed to help process and download your media files."
+msgstr "Этот инструмент должен быть установлен для обработки и скачивания медиафайлов."
+
+msgid "FFmpeg Detected (System)"
+msgstr "FFmpeg обнаружен (в системе)"
+
+msgid "FFmpeg Detected (Bundled)"
+msgstr "FFmpeg обнаружен (встроенный)"
+
+msgid "FFmpeg Missing"
+msgstr "FFmpeg не обнаружен"
+
+msgid "Configure application settings and dependencies."
+msgstr "Настройка параметров и зависимостей приложения."
+
+msgid "App Language"
+msgstr "Язык интерфейса"
+
+msgid "Change application interface language."
+msgstr "Выбор языка интерфейса приложения."
+
+msgid "Downloading"
+msgstr "Скачивание..."
+
+msgid "Processing"
+msgstr "Обработка..."
+
+msgid "Completed"
+msgstr "Готово"
+
+msgid "Failed"
+msgstr "Ошибка"
+
+msgid "Cancelled"
+msgstr "Отменено"
+
+msgid "Queued"
+msgstr "В очереди"
+
+msgid "Cancel Download"
+msgstr "Отменить загрузку"
+
+msgid "Waiting in queue..."
+msgstr "Ожидание в очереди..."
+
+msgid "Download completed successfully."
+msgstr "Загрузка завершена успешно."
+
+msgid "Download cancelled by user."
+msgstr "Загрузка отменена пользователем."
+
+msgid "An error occurred during download."
+msgstr "Произошла ошибка при скачивании."
+
+msgid "Extracting audio/merging streams. Please wait..."
+msgstr "Извлечение аудио / объединение потоков. Пожалуйста, подождите..."
+
+msgid "ETA: {}"
+msgstr "Осталось: {}"
+
+msgid "ETA: --:--"
+msgstr "Осталось: --:--"
+
+msgid "{} downloaded"
+msgstr "Скачано: {}"
+
+msgid "{} / {}"
+msgstr "{} из {}"
+
+msgid "Quality:"
+msgstr "Качество:"

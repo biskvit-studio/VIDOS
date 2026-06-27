@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+
+msgid "Download"
+msgstr "İndir"
+
+msgid "History"
+msgstr "Geçmiş"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Theme Mode"
+msgstr "Tema"
+
+msgid "Toggle Theme"
+msgstr "Temayı Değiştir"
+
+msgid "Download single videos or full playlists in high quality."
+msgstr "Tekli videoları veya tüm oynatma listelerini yüksek kalitede indirin."
+
+msgid "Paste video or playlist link..."
+msgstr "Video veya oynatma listesi bağlantısını yapıştırın..."
+
+msgid "Analyze"
+msgstr "Analiz Et"
+
+msgid "Analyzing URL..."
+msgstr "Bağlantı analiz ediliyor..."
+
+msgid "Active Downloads"
+msgstr "Aktif İndirmeler"
+
+msgid "Please enter a valid URL."
+msgstr "Lütfen geçerli bir URL girin."
+
+msgid "Failed to analyze URL: {}"
+msgstr "Bağlantı analiz edilemedi: {}"
+
+msgid "Download task added to queue."
+msgstr "İndirme görevi sıraya eklendi."
+
+msgid "Starting playlist download ({} items)."
+msgstr "Oynatma listesi indirilmeye başlanıyor ({} öge)."
+
+msgid "No videos selected."
+msgstr "Hiçbir video seçilmedi."
+
+msgid "1080p (Best MP4)"
+msgstr "1080p (En İyi Kalite, MP4)"
+
+msgid "720p (HD MP4)"
+msgstr "720p (HD, MP4)"
+
+msgid "480p (SD MP4)"
+msgstr "480p (SD, MP4)"
+
+msgid "Audio Only (MP3)"
+msgstr "Yalnızca Ses (MP3)"
+
+msgid "Audio Only (M4A)"
+msgstr "Yalnızca Ses (M4A)"
+
+msgid "Start Download"
+msgstr "İndirmeyi Başlat"
+
+msgid "Select All Videos"
+msgstr "Tümünü Seç"
+
+msgid "{} Videos Available"
+msgstr "{} Video Mevcut"
+
+msgid "Download Selected ({})"
+msgstr "Seçilenleri İndir ({})"
+
+msgid "Download History"
+msgstr "İndirme Geçmişi"
+
+msgid "{} items downloaded"
+msgstr "{} öge indirildi"
+
+msgid "No downloads recorded yet"
+msgstr "Henüz kaydedilmiş indirme yok"
+
+msgid "Clear History"
+msgstr "Geçmişi Temizle"
+
+msgid "Show in Folder"
+msgstr "Klasörde Göster"
+
+msgid "File moved or deleted"
+msgstr "Dosya taşındı veya silindi"
+
+msgid "Your download history is empty"
+msgstr "İndirme geçmişiniz boş"
+
+msgid "Download Directory"
+msgstr "İndirme Klasörü"
+
+msgid "Select the default folder where downloaded media files will be saved."
+msgstr "İndirilen medya dosyalarının kaydedileceği varsayılan klasörü seçin."
+
+msgid "Browse"
+msgstr "Gözat"
+
+msgid "Select Download Folder"
+msgstr "İndirme Klasörünü Seçin"
+
+msgid "System Requirements"
+msgstr "Sistem Gereksinimleri"
+
+msgid "This tool must be installed to help process and download your media files."
+msgstr "Medya dosyalarınızı işlemek ve indirmek için bu aracın kurulu olması gerekir."
+
+msgid "FFmpeg Detected (System)"
+msgstr "FFmpeg Algılandı (Sistem)"
+
+msgid "FFmpeg Detected (Bundled)"
+msgstr "FFmpeg Algılandı (Dahili)"
+
+msgid "FFmpeg Missing"
+msgstr "FFmpeg Eksik"
+
+msgid "Configure application settings and dependencies."
+msgstr "Uygulama ayarlarını ve bağımlılıklarını yapılandırın."
+
+msgid "App Language"
+msgstr "Dil"
+
+msgid "Change application interface language."
+msgstr "Uygulama arayüz dilini değiştirin."
+
+msgid "Downloading"
+msgstr "İndiriliyor..."
+
+msgid "Processing"
+msgstr "İşleniyor..."
+
+msgid "Completed"
+msgstr "Tamamlandı"
+
+msgid "Failed"
+msgstr "Başarısız"
+
+msgid "Cancelled"
+msgstr "İptal Edildi"
+
+msgid "Queued"
+msgstr "Sırada"
+
+msgid "Cancel Download"
+msgstr "İndirmeyi İptal Et"
+
+msgid "Waiting in queue..."
+msgstr "Sırada bekleniyor..."
+
+msgid "Download completed successfully."
+msgstr "İndirme başarıyla tamamlandı."
+
+msgid "Download cancelled by user."
+msgstr "İndirme kullanıcı tarafından iptal edildi."
+
+msgid "An error occurred during download."
+msgstr "İndirme sırasında bir hata oluştu."
+
+msgid "Extracting audio/merging streams. Please wait..."
+msgstr "Ses ayıklanıyor / akışlar birleştiriliyor. Lütfen bekleyin..."
+
+msgid "ETA: {}"
+msgstr "Kalan Süre: {}"
+
+msgid "ETA: --:--"
+msgstr "Kalan Süre: --:--"
+
+msgid "{} downloaded"
+msgstr "{} indirildi"
+
+msgid "{} / {}"
+msgstr "{} / {}"
+
+msgid "Quality:"
+msgstr "Kalite:"

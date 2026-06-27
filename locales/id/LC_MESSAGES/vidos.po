@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+
+msgid "Download"
+msgstr "Unduh"
+
+msgid "History"
+msgstr "Riwayat"
+
+msgid "Settings"
+msgstr "Pengaturan"
+
+msgid "Theme Mode"
+msgstr "Tema"
+
+msgid "Toggle Theme"
+msgstr "Ubah Tema"
+
+msgid "Download single videos or full playlists in high quality."
+msgstr "Unduh video tunggal atau seluruh daftar putar dalam kualitas tinggi."
+
+msgid "Paste video or playlist link..."
+msgstr "Tempel tautan video atau daftar putar..."
+
+msgid "Analyze"
+msgstr "Analisis"
+
+msgid "Analyzing URL..."
+msgstr "Menganalisis URL..."
+
+msgid "Active Downloads"
+msgstr "Unduhan Aktif"
+
+msgid "Please enter a valid URL."
+msgstr "Harap masukkan URL yang valid."
+
+msgid "Failed to analyze URL: {}"
+msgstr "Gagal menganalisis URL: {}"
+
+msgid "Download task added to queue."
+msgstr "Tugas unduhan ditambahkan ke antrean."
+
+msgid "Starting playlist download ({} items)."
+msgstr "Memulai unduhan daftar putar ({} item)."
+
+msgid "No videos selected."
+msgstr "Tidak ada video yang dipilih."
+
+msgid "1080p (Best MP4)"
+msgstr "1080p (Kualitas Terbaik, MP4)"
+
+msgid "720p (HD MP4)"
+msgstr "720p (HD, MP4)"
+
+msgid "480p (SD MP4)"
+msgstr "480p (SD, MP4)"
+
+msgid "Audio Only (MP3)"
+msgstr "Hanya Audio (MP3)"
+
+msgid "Audio Only (M4A)"
+msgstr "Hanya Audio (M4A)"
+
+msgid "Start Download"
+msgstr "Mulai Unduh"
+
+msgid "Select All Videos"
+msgstr "Pilih Semua"
+
+msgid "{} Videos Available"
+msgstr "{} Video Tersedia"
+
+msgid "Download Selected ({})"
+msgstr "Unduh yang Dipilih ({})"
+
+msgid "Download History"
+msgstr "Riwayat Unduhan"
+
+msgid "{} items downloaded"
+msgstr "{} item diunduh"
+
+msgid "No downloads recorded yet"
+msgstr "Belum ada riwayat unduhan"
+
+msgid "Clear History"
+msgstr "Bersihkan Riwayat"
+
+msgid "Show in Folder"
+msgstr "Tampilkan di Folder"
+
+msgid "File moved or deleted"
+msgstr "Berkas dipindahkan atau dihapus"
+
+msgid "Your download history is empty"
+msgstr "Riwayat unduhan Anda kosong"
+
+msgid "Download Directory"
+msgstr "Direktori Unduhan"
+
+msgid "Select the default folder where downloaded media files will be saved."
+msgstr "Pilih folder default tempat penyimpanan berkas media yang diunduh."
+
+msgid "Browse"
+msgstr "Telusuri"
+
+msgid "Select Download Folder"
+msgstr "Pilih Folder Unduhan"
+
+msgid "System Requirements"
+msgstr "Persyaratan Sistem"
+
+msgid "This tool must be installed to help process and download your media files."
+msgstr "Alat ini harus diinstal untuk membantu memproses dan mengunduh berkas media Anda."
+
+msgid "FFmpeg Detected (System)"
+msgstr "FFmpeg Terdeteksi (Sistem)"
+
+msgid "FFmpeg Detected (Bundled)"
+msgstr "FFmpeg Terdeteksi (Bawaan)"
+
+msgid "FFmpeg Missing"
+msgstr "FFmpeg Tidak Ditemukan"
+
+msgid "Configure application settings and dependencies."
+msgstr "Konfigurasi pengaturan aplikasi dan dependensi."
+
+msgid "App Language"
+msgstr "Bahasa"
+
+msgid "Change application interface language."
+msgstr "Ubah bahasa antarmuka aplikasi."
+
+msgid "Downloading"
+msgstr "Mengunduh..."
+
+msgid "Processing"
+msgstr "Memproses..."
+
+msgid "Completed"
+msgstr "Selesai"
+
+msgid "Failed"
+msgstr "Gagal"
+
+msgid "Cancelled"
+msgstr "Dibatalkan"
+
+msgid "Queued"
+msgstr "Dalam Antrean"
+
+msgid "Cancel Download"
+msgstr "Batalkan Unduhan"
+
+msgid "Waiting in queue..."
+msgstr "Menunggu dalam antrean..."
+
+msgid "Download completed successfully."
+msgstr "Unduhan berhasil diselesaikan."
+
+msgid "Download cancelled by user."
+msgstr "Unduhan dibatalkan oleh pengguna."
+
+msgid "An error occurred during download."
+msgstr "Terjadi kesalahan saat mengunduh."
+
+msgid "Extracting audio/merging streams. Please wait..."
+msgstr "Mengekstrak audio / menggabungkan aliran. Harap tunggu..."
+
+msgid "ETA: {}"
+msgstr "Waktu Tersisa: {}"
+
+msgid "ETA: --:--"
+msgstr "Waktu Tersisa: --:--"
+
+msgid "{} downloaded"
+msgstr "{} diunduh"
+
+msgid "{} / {}"
+msgstr "{} / {}"
+
+msgid "Quality:"
+msgstr "Kualitas:"

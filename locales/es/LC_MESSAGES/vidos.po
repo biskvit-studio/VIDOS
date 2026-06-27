@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+
+msgid "Download"
+msgstr "Descargar"
+
+msgid "History"
+msgstr "Historial"
+
+msgid "Settings"
+msgstr "Ajustes"
+
+msgid "Theme Mode"
+msgstr "Tema"
+
+msgid "Toggle Theme"
+msgstr "Cambiar tema"
+
+msgid "Download single videos or full playlists in high quality."
+msgstr "Descargar videos individuales o listas de reproducción completas en alta calidad."
+
+msgid "Paste video or playlist link..."
+msgstr "Pegar enlace de video o lista de reproducción..."
+
+msgid "Analyze"
+msgstr "Analizar"
+
+msgid "Analyzing URL..."
+msgstr "Analizando URL..."
+
+msgid "Active Downloads"
+msgstr "Descargas activas"
+
+msgid "Please enter a valid URL."
+msgstr "Por favor, introduce una URL válida."
+
+msgid "Failed to analyze URL: {}"
+msgstr "Error al analizar la URL: {}"
+
+msgid "Download task added to queue."
+msgstr "Tarea de descarga añadida a la cola."
+
+msgid "Starting playlist download ({} items)."
+msgstr "Iniciando descarga de lista de reproducción ({} elementos)."
+
+msgid "No videos selected."
+msgstr "No se ha seleccionado ningún video."
+
+msgid "1080p (Best MP4)"
+msgstr "1080p (Mejor calidad, MP4)"
+
+msgid "720p (HD MP4)"
+msgstr "720p (HD, MP4)"
+
+msgid "480p (SD MP4)"
+msgstr "480p (SD, MP4)"
+
+msgid "Audio Only (MP3)"
+msgstr "Solo audio (MP3)"
+
+msgid "Audio Only (M4A)"
+msgstr "Solo audio (M4A)"
+
+msgid "Start Download"
+msgstr "Iniciar descarga"
+
+msgid "Select All Videos"
+msgstr "Seleccionar todo"
+
+msgid "{} Videos Available"
+msgstr "{} videos disponibles"
+
+msgid "Download Selected ({})"
+msgstr "Descargar selección ({})"
+
+msgid "Download History"
+msgstr "Historial de descargas"
+
+msgid "{} items downloaded"
+msgstr "{} elementos descargados"
+
+msgid "No downloads recorded yet"
+msgstr "Aún no hay descargas registradas"
+
+msgid "Clear History"
+msgstr "Limpiar historial"
+
+msgid "Show in Folder"
+msgstr "Mostrar en carpeta"
+
+msgid "File moved or deleted"
+msgstr "Archivo movido o eliminado"
+
+msgid "Your download history is empty"
+msgstr "Tu historial de descargas está vacío"
+
+msgid "Download Directory"
+msgstr "Carpeta de descargas"
+
+msgid "Select the default folder where downloaded media files will be saved."
+msgstr "Seleccionar la carpeta predeterminada para guardar los archivos descargados."
+
+msgid "Browse"
+msgstr "Examinar"
+
+msgid "Select Download Folder"
+msgstr "Seleccionar carpeta de descargas"
+
+msgid "System Requirements"
+msgstr "Requisitos del sistema"
+
+msgid "This tool must be installed to help process and download your media files."
+msgstr "Esta herramienta debe estar instalada para procesar y descargar tus archivos."
+
+msgid "FFmpeg Detected (System)"
+msgstr "FFmpeg detectado (Sistema)"
+
+msgid "FFmpeg Detected (Bundled)"
+msgstr "FFmpeg detectado (Integrado)"
+
+msgid "FFmpeg Missing"
+msgstr "FFmpeg no encontrado"
+
+msgid "Configure application settings and dependencies."
+msgstr "Configurar los ajustes y las dependencias de la aplicación."
+
+msgid "App Language"
+msgstr "Idioma"
+
+msgid "Change application interface language."
+msgstr "Cambiar el idioma de la interfaz."
+
+msgid "Downloading"
+msgstr "Descargando..."
+
+msgid "Processing"
+msgstr "Procesando..."
+
+msgid "Completed"
+msgstr "Completado"
+
+msgid "Failed"
+msgstr "Fallido"
+
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgid "Queued"
+msgstr "En cola"
+
+msgid "Cancel Download"
+msgstr "Cancelar descarga"
+
+msgid "Waiting in queue..."
+msgstr "Esperando en la cola..."
+
+msgid "Download completed successfully."
+msgstr "Descarga completada con éxito."
+
+msgid "Download cancelled by user."
+msgstr "Descarga cancelada por el usuario."
+
+msgid "An error occurred during download."
+msgstr "Ocurrió un error durante la descarga."
+
+msgid "Extracting audio/merging streams. Please wait..."
+msgstr "Extrayendo audio / uniendo pistas. Por favor, espere..."
+
+msgid "ETA: {}"
+msgstr "Tiempo restante: {}"
+
+msgid "ETA: --:--"
+msgstr "Tiempo restante: --:--"
+
+msgid "{} downloaded"
+msgstr "{} descargado"
+
+msgid "{} / {}"
+msgstr "{} / {}"
+
+msgid "Quality:"
+msgstr "Calidad:"

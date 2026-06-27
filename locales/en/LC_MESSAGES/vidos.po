@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+msgid "Download"
+msgstr "Download"
+
+msgid "History"
+msgstr "History"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Theme Mode"
+msgstr "Theme Mode"
+
+msgid "Toggle Theme"
+msgstr "Toggle Theme"
+
+msgid "Download single videos or full playlists in high quality."
+msgstr "Download single videos or full playlists in high quality."
+
+msgid "Paste video or playlist link..."
+msgstr "Paste video or playlist link..."
+
+msgid "Analyze"
+msgstr "Analyze"
+
+msgid "Analyzing URL..."
+msgstr "Analyzing URL..."
+
+msgid "Active Downloads"
+msgstr "Active Downloads"
+
+msgid "Please enter a valid URL."
+msgstr "Please enter a valid URL."
+
+msgid "Failed to analyze URL: {}"
+msgstr "Failed to analyze URL: {}"
+
+msgid "Download task added to queue."
+msgstr "Download task added to queue."
+
+msgid "Starting playlist download ({} items)."
+msgstr "Starting playlist download ({} items)."
+
+msgid "No videos selected."
+msgstr "No videos selected."
+
+msgid "1080p (Best MP4)"
+msgstr "1080p (Best MP4)"
+
+msgid "720p (HD MP4)"
+msgstr "720p (HD MP4)"
+
+msgid "480p (SD MP4)"
+msgstr "480p (SD MP4)"
+
+msgid "Audio Only (MP3)"
+msgstr "Audio Only (MP3)"
+
+msgid "Audio Only (M4A)"
+msgstr "Audio Only (M4A)"
+
+msgid "Start Download"
+msgstr "Start Download"
+
+msgid "Select All Videos"
+msgstr "Select All Videos"
+
+msgid "{} Videos Available"
+msgstr "{} Videos Available"
+
+msgid "Download Selected ({})"
+msgstr "Download Selected ({})"
+
+msgid "Download History"
+msgstr "Download History"
+
+msgid "{} items downloaded"
+msgstr "{} items downloaded"
+
+msgid "No downloads recorded yet"
+msgstr "No downloads recorded yet"
+
+msgid "Clear History"
+msgstr "Clear History"
+
+msgid "Show in Folder"
+msgstr "Show in Folder"
+
+msgid "File moved or deleted"
+msgstr "File moved or deleted"
+
+msgid "Your download history is empty"
+msgstr "Your download history is empty"
+
+msgid "Download Directory"
+msgstr "Download Directory"
+
+msgid "Select the default folder where downloaded media files will be saved."
+msgstr "Select the default folder where downloaded media files will be saved."
+
+msgid "Browse"
+msgstr "Browse"
+
+msgid "Select Download Folder"
+msgstr "Select Download Folder"
+
+msgid "System Requirements"
+msgstr "System Requirements"
+
+msgid "This tool must be installed to help process and download your media files."
+msgstr "This tool must be installed to help process and download your media files."
+
+msgid "FFmpeg Detected (System)"
+msgstr "FFmpeg Detected (System)"
+
+msgid "FFmpeg Detected (Bundled)"
+msgstr "FFmpeg Detected (Bundled)"
+
+msgid "FFmpeg Missing"
+msgstr "FFmpeg Missing"
+
+msgid "Configure application settings and dependencies."
+msgstr "Configure application settings and dependencies."
+
+msgid "App Language"
+msgstr "App Language"
+
+msgid "Change application interface language."
+msgstr "Change application interface language."
+
+msgid "Downloading"
+msgstr "Downloading"
+
+msgid "Processing"
+msgstr "Processing"
+
+msgid "Completed"
+msgstr "Completed"
+
+msgid "Failed"
+msgstr "Failed"
+
+msgid "Cancelled"
+msgstr "Cancelled"
+
+msgid "Queued"
+msgstr "Queued"
+
+msgid "Cancel Download"
+msgstr "Cancel Download"
+
+msgid "Waiting in queue..."
+msgstr "Waiting in queue..."
+
+msgid "Download completed successfully."
+msgstr "Download completed successfully."
+
+msgid "Download cancelled by user."
+msgstr "Download cancelled by user."
+
+msgid "An error occurred during download."
+msgstr "An error occurred during download."
+
+msgid "Extracting audio/merging streams. Please wait..."
+msgstr "Extracting audio/merging streams. Please wait..."
+
+msgid "ETA: {}"
+msgstr "ETA: {}"
+
+msgid "ETA: --:--"
+msgstr "ETA: --:--"
+
+msgid "{} downloaded"
+msgstr "{} downloaded"
+
+msgid "{} / {}"
+msgstr "{} / {}"
+
+msgid "Quality:"
+msgstr "Quality:"

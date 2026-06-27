@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+
+msgid "Download"
+msgstr "Télécharger"
+
+msgid "History"
+msgstr "Historique"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Theme Mode"
+msgstr "Thème"
+
+msgid "Toggle Theme"
+msgstr "Changer de thème"
+
+msgid "Download single videos or full playlists in high quality."
+msgstr "Télécharger des vidéos individuelles ou des listes de lecture complètes en haute qualité."
+
+msgid "Paste video or playlist link..."
+msgstr "Coller le lien de la vidéo ou de la playlist..."
+
+msgid "Analyze"
+msgstr "Analyser"
+
+msgid "Analyzing URL..."
+msgstr "Analyse de l'URL..."
+
+msgid "Active Downloads"
+msgstr "Téléchargements actifs"
+
+msgid "Please enter a valid URL."
+msgstr "Veuillez saisir une URL valide."
+
+msgid "Failed to analyze URL: {}"
+msgstr "Échec de l'analyse de l'URL : {}"
+
+msgid "Download task added to queue."
+msgstr "Tâche de téléchargement ajoutée à la file d'attente."
+
+msgid "Starting playlist download ({} items)."
+msgstr "Début du téléchargement de la playlist ({} éléments)."
+
+msgid "No videos selected."
+msgstr "Aucune vidéo sélectionnée."
+
+msgid "1080p (Best MP4)"
+msgstr "1080p (Meilleure qualité, MP4)"
+
+msgid "720p (HD MP4)"
+msgstr "720p (HD, MP4)"
+
+msgid "480p (SD MP4)"
+msgstr "480p (SD, MP4)"
+
+msgid "Audio Only (MP3)"
+msgstr "Audio uniquement (MP3)"
+
+msgid "Audio Only (M4A)"
+msgstr "Audio uniquement (M4A)"
+
+msgid "Start Download"
+msgstr "Lancer le téléchargement"
+
+msgid "Select All Videos"
+msgstr "Tout sélectionner"
+
+msgid "{} Videos Available"
+msgstr "{} vidéos disponibles"
+
+msgid "Download Selected ({})"
+msgstr "Télécharger la sélection ({})"
+
+msgid "Download History"
+msgstr "Historique des téléchargements"
+
+msgid "{} items downloaded"
+msgstr "{} éléments téléchargés"
+
+msgid "No downloads recorded yet"
+msgstr "Aucun téléchargement enregistré"
+
+msgid "Clear History"
+msgstr "Effacer l'historique"
+
+msgid "Show in Folder"
+msgstr "Afficher dans le dossier"
+
+msgid "File moved or deleted"
+msgstr "Fichier déplacé ou supprimé"
+
+msgid "Your download history is empty"
+msgstr "Votre historique de téléchargement est vide"
+
+msgid "Download Directory"
+msgstr "Dossier de téléchargement"
+
+msgid "Select the default folder where downloaded media files will be saved."
+msgstr "Sélectionner le dossier par défaut pour les fichiers téléchargés."
+
+msgid "Browse"
+msgstr "Parcourir"
+
+msgid "Select Download Folder"
+msgstr "Choisir le dossier de téléchargement"
+
+msgid "System Requirements"
+msgstr "Configuration requise"
+
+msgid "This tool must be installed to help process and download your media files."
+msgstr "Cet outil doit être installé pour traiter et télécharger vos fichiers multimédias."
+
+msgid "FFmpeg Detected (System)"
+msgstr "FFmpeg détecté (Système)"
+
+msgid "FFmpeg Detected (Bundled)"
+msgstr "FFmpeg détecté (Intégré)"
+
+msgid "FFmpeg Missing"
+msgstr "FFmpeg manquant"
+
+msgid "Configure application settings and dependencies."
+msgstr "Configurer les paramètres et les dépendances de l'application."
+
+msgid "App Language"
+msgstr "Langue"
+
+msgid "Change application interface language."
+msgstr "Changer la langue de l'interface."
+
+msgid "Downloading"
+msgstr "Téléchargement..."
+
+msgid "Processing"
+msgstr "Traitement..."
+
+msgid "Completed"
+msgstr "Terminé"
+
+msgid "Failed"
+msgstr "Échoué"
+
+msgid "Cancelled"
+msgstr "Annulé"
+
+msgid "Queued"
+msgstr "En attente"
+
+msgid "Cancel Download"
+msgstr "Annuler le téléchargement"
+
+msgid "Waiting in queue..."
+msgstr "En attente dans la file..."
+
+msgid "Download completed successfully."
+msgstr "Téléchargement terminé avec succès."
+
+msgid "Download cancelled by user."
+msgstr "Téléchargement annulé par l'utilisateur."
+
+msgid "An error occurred during download."
+msgstr "Une erreur est survenue lors du téléchargement."
+
+msgid "Extracting audio/merging streams. Please wait..."
+msgstr "Extraction audio / fusion des flux. Veuillez patienter..."
+
+msgid "ETA: {}"
+msgstr "Temps restant : {}"
+
+msgid "ETA: --:--"
+msgstr "Temps restant : --:--"
+
+msgid "{} downloaded"
+msgstr "{} téléchargés"
+
+msgid "{} / {}"
+msgstr "{} / {}"
+
+msgid "Quality:"
+msgstr "Qualité :"
