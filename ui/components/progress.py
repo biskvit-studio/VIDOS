@@ -139,15 +139,30 @@ class DownloadProgressBar(ft.Container):
             )
         )
 
-        # "Open File" button — hidden until the download completes successfully
-        open_file_btn = ft.TextButton(
-            text=_("Open File"),
-            icon=ft.Icons.FOLDER_OPEN_OUTLINED,
+        # "Open File" button — hidden until download completes successfully.
+        # Uses ft.Container (like ShadcnButton) instead of ft.TextButton which
+        # does not support the 'text' keyword argument in Flet 0.85.
+        open_file_btn_text = ft.Text(
+            _("Open File"),
+            size=12,
+            color=colors.accent_blue,
+            font_family="Montserrat-Medium",
+        )
+        open_file_btn = ft.Container(
+            content=ft.Row(
+                [
+                    ft.Icon(ft.Icons.FOLDER_OPEN_OUTLINED, size=14, color=colors.accent_blue),
+                    open_file_btn_text,
+                ],
+                spacing=4,
+                tight=True,
+            ),
             visible=False,
-            style=ft.ButtonStyle(
-                color=colors.accent_blue,
-                padding=ft.Padding.symmetric(horizontal=8, vertical=0),
-            )
+            padding=ft.Padding.symmetric(horizontal=8, vertical=4),
+            border_radius=6,
+            border=ft.Border.all(1, colors.accent_blue),
+            ink=True,
+            on_click=None,  # Wired up in set_status() when filepath is known
         )
 
         content_layout = ft.Column(
@@ -198,6 +213,7 @@ class DownloadProgressBar(ft.Container):
         self._status_badge = status_badge  # NOT self.badge — that's reserved by Flet
         self._cancel_btn = cancel_btn
         self._open_file_btn = open_file_btn
+        self._open_file_btn_text = open_file_btn_text
 
     def trigger_cancel(self):
         if self._on_cancel:
@@ -264,7 +280,7 @@ class DownloadProgressBar(ft.Container):
             self._cancel_btn.visible = False
             # Show "Open File" button when a valid filepath is available
             if filepath and os.path.exists(filepath):
-                self._open_file_btn.on_click = lambda _: _open_file(filepath)
+                self._open_file_btn.on_click = lambda evt: _open_file(filepath)
                 self._open_file_btn.visible = True
         elif status_norm == 'cancelled':
             self._stats_label.value = _("Download cancelled by user.")
