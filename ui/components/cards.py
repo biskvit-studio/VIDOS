@@ -59,7 +59,7 @@ class VideoMetadataCard(ShadcnCard):
             bgcolor=badge_bg,
             border_radius=6,
             padding=ft.Padding.symmetric(horizontal=8, vertical=3),
-            alignment=ft.alignment.center,
+            alignment=ft.alignment.Alignment(0, 0),
         )
 
         card_content = ft.Row(
