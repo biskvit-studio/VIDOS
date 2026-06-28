@@ -76,6 +76,22 @@ This app was born at a laundry. Sitting there, waiting for the clothes to dry, w
 
 ---
 
+## ⚖️ Legal Disclaimer
+
+VIDOS is an open-source, general-purpose tool designed to help users download publicly available media for **personal, offline, and non-commercial use only**.
+
+**By using this application, you agree to the following:**
+
+- You are solely responsible for ensuring that any content you download complies with the **copyright laws** of your country and the **Terms of Service** of the platform you are downloading from.
+- VIDOS is **not intended** to be used to download, reproduce, or distribute **copyrighted material** without the explicit permission of the copyright holder.
+- VIDOS is **not intended** to bypass, circumvent, or defeat any **Digital Rights Management (DRM)** protection, paywall, age restriction, or any other access control mechanism.
+- VIDOS is **not intended** to download **private, restricted, or non-public** videos or content that is not meant to be publicly shared.
+- The developers of VIDOS are **not responsible** for any misuse of this software. Any legal consequences arising from the misuse of this tool are the **sole responsibility of the user**.
+
+> **This tool works similarly to saving a webpage for offline reading — it is your responsibility to use it ethically and legally.**
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
