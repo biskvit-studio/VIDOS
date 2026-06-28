@@ -184,3 +184,9 @@ msgstr "{} / {}"
 
 msgid "Quality:"
 msgstr "Quality:"
+
+msgid "4K (2160p Best)"
+msgstr "4K (2160p Best)"
+
+msgid "2K (1440p)"
+msgstr "2K (1440p)"
