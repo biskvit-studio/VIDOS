@@ -50,8 +50,8 @@ msgstr "Memulai unduhan daftar putar ({} item)."
 msgid "No videos selected."
 msgstr "Tidak ada video yang dipilih."
 
-msgid "1080p (Best MP4)"
-msgstr "1080p (Kualitas Terbaik, MP4)"
+msgid "1080p (Full HD, MP4)"
+msgstr "1080p (Full HD, MP4)"
 
 msgid "720p (HD MP4)"
 msgstr "720p (HD, MP4)"
@@ -184,3 +184,9 @@ msgstr "{} / {}"
 
 msgid "Quality:"
 msgstr "Kualitas:"
+
+msgid "4K (2160p Best)"
+msgstr "4K (Kualitas Terbaik, 2160p)"
+
+msgid "2K (1440p)"
+msgstr "2K (1440p)"

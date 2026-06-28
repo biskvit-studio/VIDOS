@@ -147,15 +147,24 @@ class DownloadEngine:
                 }]
             })
         else:
-            if quality == "1080p":
+            if quality == "2160p":
+                ydl_opts['format'] = 'bestvideo[height<=2160]+bestaudio/best'
+                ydl_opts['merge_output_format'] = 'mkv'
+            elif quality == "1440p":
+                ydl_opts['format'] = 'bestvideo[height<=1440]+bestaudio/best'
+                ydl_opts['merge_output_format'] = 'mkv'
+            elif quality == "1080p":
                 ydl_opts['format'] = 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/bestvideo[height<=1080]+bestaudio/best[height<=1080]'
+                ydl_opts['merge_output_format'] = 'mp4'
             elif quality == "720p":
                 ydl_opts['format'] = 'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/bestvideo[height<=720]+bestaudio/best[height<=720]'
+                ydl_opts['merge_output_format'] = 'mp4'
             elif quality == "480p":
                 ydl_opts['format'] = 'bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/bestvideo[height<=480]+bestaudio/best[height<=480]'
+                ydl_opts['merge_output_format'] = 'mp4'
             else:
                 ydl_opts['format'] = 'bestvideo+bestaudio/best'
-            ydl_opts['merge_output_format'] = 'mp4'
+                ydl_opts['merge_output_format'] = 'mkv'
 
         # ── Multi-stream aware, throttled progress hook ───────────────────────
         # Two root causes of inaccurate progress:

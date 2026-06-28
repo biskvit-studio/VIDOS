@@ -50,8 +50,8 @@ msgstr "Iniciando download da playlist ({} itens)."
 msgid "No videos selected."
 msgstr "Nenhum vídeo selecionado."
 
-msgid "1080p (Best MP4)"
-msgstr "1080p (Melhor qualidade, MP4)"
+msgid "1080p (Full HD, MP4)"
+msgstr "1080p (Full HD, MP4)"
 
 msgid "720p (HD MP4)"
 msgstr "720p (HD, MP4)"
@@ -184,3 +184,9 @@ msgstr "{} / {}"
 
 msgid "Quality:"
 msgstr "Qualidade:"
+
+msgid "4K (2160p Best)"
+msgstr "4K (Melhor qualidade, 2160p)"
+
+msgid "2K (1440p)"
+msgstr "2K (1440p)"
