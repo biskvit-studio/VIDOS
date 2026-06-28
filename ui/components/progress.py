@@ -1,42 +1,51 @@
+import os
+import subprocess
+import sys
 import flet as ft
 from ui.theme import ThemeColors
 from downloader import _
 
 
+def _resolve_status_style(status: str, colors: ThemeColors) -> tuple:
+    """
+    Returns (bg_color, text_color, label) for a given status string.
+    Single source of truth — used by both StatusBadge.__init__ and update_badge().
+    """
+    status_norm = status.lower()
+    if status_norm in ('downloading', 'processing'):
+        bg = ft.Colors.with_opacity(0.1, colors.accent_blue)
+        text_color = colors.accent_blue
+        label = _("Downloading") if status_norm == 'downloading' else _("Processing")
+    elif status_norm in ('finished', 'completed'):
+        bg = ft.Colors.with_opacity(0.1, colors.accent_green)
+        text_color = colors.accent_green
+        label = _("Completed")
+    elif status_norm in ('error', 'failed'):
+        bg = ft.Colors.with_opacity(0.1, colors.accent_red)
+        text_color = colors.accent_red
+        label = _("Failed")
+    elif status_norm == 'cancelled':
+        bg = ft.Colors.with_opacity(0.1, colors.accent_orange)
+        text_color = colors.accent_orange
+        label = _("Cancelled")
+    elif status_norm == 'queued':
+        bg = colors.card_secondary
+        text_color = colors.text_muted
+        label = _("Queued")
+    else:
+        bg = colors.card_secondary
+        text_color = colors.text_muted
+        label = _(status.capitalize())
+    return bg, text_color, label
+
+
 class StatusBadge(ft.Container):
     """A pill badge representing the state of a download task."""
     def __init__(self, status: str, colors: ThemeColors):
-        # Store colors and logical state first
         self._colors = colors
         self.current_status = status.lower()
 
-        # In Flet 0.85, super().__init__() MUST come first before setting any attributes.
-        # 'badge' is a reserved Flet property on all controls — we never use that name.
-        status_norm = self.current_status
-        if status_norm in ('downloading', 'processing'):
-            bg = ft.Colors.with_opacity(0.1, colors.accent_blue)
-            text_color = colors.accent_blue
-            label = _("Downloading") if status_norm == 'downloading' else _("Processing")
-        elif status_norm in ('finished', 'completed'):
-            bg = ft.Colors.with_opacity(0.1, colors.accent_green)
-            text_color = colors.accent_green
-            label = _("Completed")
-        elif status_norm in ('error', 'failed'):
-            bg = ft.Colors.with_opacity(0.1, colors.accent_red)
-            text_color = colors.accent_red
-            label = _("Failed")
-        elif status_norm == 'cancelled':
-            bg = ft.Colors.with_opacity(0.1, colors.accent_orange)
-            text_color = colors.accent_orange
-            label = _("Cancelled")
-        elif status_norm == 'queued':
-            bg = colors.card_secondary
-            text_color = colors.text_muted
-            label = _("Queued")
-        else:
-            bg = colors.card_secondary
-            text_color = colors.text_muted
-            label = _(status.capitalize())
+        bg, text_color, label = _resolve_status_style(status, colors)
 
         self._badge_text = ft.Text(
             label,
@@ -58,36 +67,23 @@ class StatusBadge(ft.Container):
     def update_badge(self, status: str):
         """Mutate badge appearance in-place without creating new objects."""
         self.current_status = status.lower()
-        status_norm = self.current_status
-        
-        if status_norm in ('downloading', 'processing'):
-            bg = ft.Colors.with_opacity(0.1, self._colors.accent_blue)
-            text_color = self._colors.accent_blue
-            label = _("Downloading") if status_norm == 'downloading' else _("Processing")
-        elif status_norm in ('finished', 'completed'):
-            bg = ft.Colors.with_opacity(0.1, self._colors.accent_green)
-            text_color = self._colors.accent_green
-            label = _("Completed")
-        elif status_norm in ('error', 'failed'):
-            bg = ft.Colors.with_opacity(0.1, self._colors.accent_red)
-            text_color = self._colors.accent_red
-            label = _("Failed")
-        elif status_norm == 'cancelled':
-            bg = ft.Colors.with_opacity(0.1, self._colors.accent_orange)
-            text_color = self._colors.accent_orange
-            label = _("Cancelled")
-        elif status_norm == 'queued':
-            bg = self._colors.card_secondary
-            text_color = self._colors.text_muted
-            label = _("Queued")
-        else:
-            bg = self._colors.card_secondary
-            text_color = self._colors.text_muted
-            label = _(status.capitalize())
-
+        bg, text_color, label = _resolve_status_style(status, self._colors)
         self.bgcolor = bg
         self._badge_text.value = label
         self._badge_text.color = text_color
+
+
+def _open_file(filepath: str):
+    """Cross-platform: open the file in the user's default media player."""
+    try:
+        if sys.platform == 'win32':
+            os.startfile(filepath)
+        elif sys.platform == 'darwin':
+            subprocess.run(['open', filepath], check=False)
+        else:
+            subprocess.run(['xdg-open', filepath], check=False)
+    except Exception:
+        pass
 
 
 class DownloadProgressBar(ft.Container):
@@ -143,12 +139,24 @@ class DownloadProgressBar(ft.Container):
             )
         )
 
+        # "Open File" button — hidden until the download completes successfully
+        open_file_btn = ft.TextButton(
+            text=_("Open File"),
+            icon=ft.Icons.FOLDER_OPEN_OUTLINED,
+            visible=False,
+            style=ft.ButtonStyle(
+                color=colors.accent_blue,
+                padding=ft.Padding.symmetric(horizontal=8, vertical=0),
+            )
+        )
+
         content_layout = ft.Column(
             [
                 ft.Row(
                     [
                         title_label,
                         status_badge,
+                        open_file_btn,
                         cancel_btn
                     ],
                     alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
@@ -189,6 +197,7 @@ class DownloadProgressBar(ft.Container):
         self._stats_label = stats_label
         self._status_badge = status_badge  # NOT self.badge — that's reserved by Flet
         self._cancel_btn = cancel_btn
+        self._open_file_btn = open_file_btn
 
     def trigger_cancel(self):
         if self._on_cancel:
@@ -237,9 +246,11 @@ class DownloadProgressBar(ft.Container):
         except Exception:
             pass
 
-    def set_status(self, status: str):
-        """Updates status badge and control states for terminal download states."""
-        # Mutate badge in-place — no new object creation to avoid _values crash
+    def set_status(self, status: str, filepath: str = ""):
+        """
+        Updates status badge and control states for terminal download states.
+        filepath: when provided on completion, wires up the Open File button.
+        """
         try:
             self._status_badge.update_badge(status)
         except Exception:
@@ -251,6 +262,10 @@ class DownloadProgressBar(ft.Container):
             self._percent_label.value = "100%"
             self._stats_label.value = _("Download completed successfully.")
             self._cancel_btn.visible = False
+            # Show "Open File" button when a valid filepath is available
+            if filepath and os.path.exists(filepath):
+                self._open_file_btn.on_click = lambda _: _open_file(filepath)
+                self._open_file_btn.visible = True
         elif status_norm == 'cancelled':
             self._stats_label.value = _("Download cancelled by user.")
             self._cancel_btn.visible = False

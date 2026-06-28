@@ -98,8 +98,23 @@ class DownloadView(ft.ListView):
         )
 
     def on_load(self):
-        # View refresh hook
-        pass
+        """Called when the Download tab is selected. Auto-fills from clipboard if URL present."""
+        self.main_page.run_task(self._check_clipboard)
+
+    async def _check_clipboard(self):
+        """Reads the clipboard and pre-fills the URL field if it contains a valid link."""
+        try:
+            text = await self.main_page.get_clipboard_async()
+            if text and text.strip().startswith(('http://', 'https://')):
+                # Only auto-fill if the user hasn't already typed something
+                if not self.url_input.value:
+                    self.url_input.value = text.strip()
+                    try:
+                        self.url_input.update()
+                    except Exception:
+                        pass
+        except Exception:
+            pass
 
     async def _on_parse_clicked(self, e):
         url = self.url_input.value.strip()
@@ -452,7 +467,7 @@ class DownloadView(ft.ListView):
             )
             
             # Successful Completion
-            bar.set_status("completed")
+            bar.set_status("completed", filepath)
             self._save_to_history(title, url, filepath, "completed")
             
         except DownloadCancelledException:
@@ -483,7 +498,7 @@ class DownloadView(ft.ListView):
             'status': status,
             'timestamp': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         })
-        set_setting("download_history", history)
+        set_setting("download_history", history[-200:])
         
         # Trigger reload on layout views history screen if loaded
         if self.app_layout and "history" in self.app_layout.views:

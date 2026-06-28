@@ -24,6 +24,13 @@ class DownloadEngine:
             'no_warnings': True,
             'extract_flat': 'in_playlist',
             'skip_download': True,
+            'http_headers': {
+                'User-Agent': (
+                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                    'AppleWebKit/537.36 (KHTML, like Gecko) '
+                    'Chrome/125.0.0.0 Safari/537.36'
+                )
+            },
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -62,24 +69,19 @@ class DownloadEngine:
                 'extractor': info.get('extractor_key', 'Generic').lower()
             }
         else:
-            ydl_opts_full = {
-                'quiet': True,
-                'no_warnings': True,
-                'skip_download': True,
-            }
-            with yt_dlp.YoutubeDL(ydl_opts_full) as ydl:
-                full_info = ydl.extract_info(url, download=False)
-
+            # Re-use info from the first call — extract_flat='in_playlist'
+            # does a full fetch for single (non-playlist) URLs, so a second
+            # round-trip is unnecessary and only adds latency.
             return {
                 'type': 'video',
-                'title': full_info.get('title') or 'Unknown Title',
+                'title': info.get('title') or 'Unknown Title',
                 'url': url,
-                'duration': full_info.get('duration'),
-                'thumbnail': full_info.get('thumbnail'),
-                'uploader': full_info.get('uploader') or 'Unknown Creator',
-                'id': full_info.get('id'),
-                'description': full_info.get('description', '')[:200],
-                'extractor': full_info.get('extractor_key', 'Generic').lower()
+                'duration': info.get('duration'),
+                'thumbnail': info.get('thumbnail'),
+                'uploader': info.get('uploader') or 'Unknown Creator',
+                'id': info.get('id'),
+                'description': (info.get('description') or '')[:200],
+                'extractor': info.get('extractor_key', 'Generic').lower()
             }
 
     @classmethod
@@ -130,6 +132,16 @@ class DownloadEngine:
             'socket_timeout': 30,
             # Reuse TCP connections across requests (keep-alive)
             'keepalive': True,
+
+            # ── Browser user-agent ────────────────────────────────────────────
+            # Reduces bot detection fingerprinting on rate-sensitive platforms
+            'http_headers': {
+                'User-Agent': (
+                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                    'AppleWebKit/537.36 (KHTML, like Gecko) '
+                    'Chrome/125.0.0.0 Safari/537.36'
+                )
+            },
         }
 
         # Resolve FFmpeg location (either system path or bundled package path)
@@ -142,11 +154,25 @@ class DownloadEngine:
         if is_audio:
             ydl_opts.update({
                 'format': 'bestaudio/best',
-                'postprocessors': [{
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': audio_format,
-                    'preferredquality': '192',
-                }]
+                # writethumbnail downloads the cover image so EmbedThumbnail
+                # can embed it as album art into the audio file.
+                'writethumbnail': True,
+                'postprocessors': [
+                    {
+                        'key': 'FFmpegExtractAudio',
+                        'preferredcodec': audio_format,
+                        'preferredquality': '192',
+                    },
+                    {
+                        # Embed title, artist, and other ID3/MP4 tags
+                        'key': 'FFmpegMetadata',
+                        'add_metadata': True,
+                    },
+                    {
+                        # Embed the downloaded thumbnail as album artwork
+                        'key': 'EmbedThumbnail',
+                    }
+                ]
             })
         else:
             if quality == "2160p":

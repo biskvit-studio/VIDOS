@@ -1,4 +1,5 @@
 import os
+import logging
 import shutil
 import asyncio
 # pyrefly: ignore [missing-import]
@@ -6,6 +7,8 @@ import flet as ft
 from ui.theme import ThemeColors
 from ui.components import ShadcnCard, ShadcnButton, ShadcnTextField, StatusBadge
 from downloader import get_setting, set_setting, get_ffmpeg_details, _
+
+logger = logging.getLogger("vidos.settings")
 
 
 class SettingsView(ft.ListView):
@@ -256,8 +259,6 @@ class SettingsView(ft.ListView):
 
     def _on_language_changed(self, e):
         """Saves selected language and triggers app-wide rebuild to apply translations."""
-        import logging
-        logger = logging.getLogger("vidos.settings")
         # In Flet 0.85+, the Dropdown uses on_select; value is on e.control.value
         new_lang = e.control.value
         logger.info(f"Language selection event fired. New value: {new_lang!r}")
@@ -278,8 +279,6 @@ class SettingsView(ft.ListView):
 
     async def _trigger_rebuild(self):
         """Async trampoline that dispatches the sync rebuild callback safely."""
-        import logging
-        logger = logging.getLogger("vidos.settings")
         try:
             self._on_language_change_callback()
             logger.info("rebuild_app completed.")
