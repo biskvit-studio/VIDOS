@@ -39,6 +39,7 @@ async def main(page: ft.Page):
         # Reinitialize palette colors
         colors = ThemeColors(is_dark=is_dark)
         page.bgcolor = colors.background
+        page.theme_mode = ft.ThemeMode.DARK if is_dark else ft.ThemeMode.LIGHT
         
         # Configure layout
         layout = AppLayout(page, colors, on_theme_toggle=toggle_theme)
