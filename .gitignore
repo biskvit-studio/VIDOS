@@ -53,6 +53,7 @@ env/
 .vscode/
 *.swp
 *.swo
+.superpowers/
 
 # Local configuration files
 .env
