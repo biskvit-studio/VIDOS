@@ -2,6 +2,8 @@
 
 A simple desktop app for downloading videos and playlists. Nothing fancy, just works. ✨
 
+![VIDOS Preview](assets/vidos_preview.png)
+
 ---
 
 ## 🛁 The Story
