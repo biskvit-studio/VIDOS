@@ -41,6 +41,14 @@ async def main(page: ft.Page):
         page.bgcolor = colors.background
         page.theme_mode = ft.ThemeMode.DARK if is_dark else ft.ThemeMode.LIGHT
         
+        # Inject custom ThemeColors into Flet's Material 3 ColorScheme
+        from ui.theme import get_flet_theme
+        custom_theme = get_flet_theme(colors)
+        if is_dark:
+            page.dark_theme = custom_theme
+        else:
+            page.theme = custom_theme
+        
         # Configure layout
         layout = AppLayout(page, colors, on_theme_toggle=toggle_theme)
         

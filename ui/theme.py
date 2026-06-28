@@ -44,10 +44,30 @@ def apply_base_page_theme(page: ft.Page):
     page.fonts = FONTS
     page.title = "VIDOS"
     page.window.icon = "/vidos_icon.ico"
-    page.theme = ft.Theme(font_family="Montserrat-Regular")
-    page.dark_theme = ft.Theme(font_family="Montserrat-Regular")
     page.window.title_bar_hidden = False
     page.window.min_width = 950
     page.window.min_height = 680
     page.window.width = 1000
     page.window.height = 720
+
+
+def get_flet_theme(colors: ThemeColors) -> ft.Theme:
+    """
+    Creates a comprehensive Flet Theme using our custom design tokens.
+    This guarantees that native Material overlays (Dropdowns, Popups, Dialogs, Snackbars)
+    match the application's custom styling perfectly in both Light and Dark mode.
+    """
+    return ft.Theme(
+        font_family="Montserrat-Regular",
+        color_scheme=ft.ColorScheme(
+            primary=colors.primary,
+            on_primary=colors.on_primary,
+            # surface controls the background of dropdown menus, dialogs, and popups
+            surface=colors.card,
+            on_surface=colors.text_primary,
+            outline=colors.border,
+            error=colors.accent_red,
+            # Explicitly remove Material 3 surface tint so dark grays stay pure
+            surface_tint="transparent"
+        ),
+    )
