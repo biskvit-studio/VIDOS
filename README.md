@@ -8,7 +8,7 @@ A simple desktop app for downloading videos and playlists. Nothing fancy, just w
 
 ## ✨ What It Does
 
-- 📥 **Download videos** from your favorite sites (YouTube, Vimeo, TikTok, and more)
+- 📥 **Download videos** from your favorite sites (YouTube, Vimeo, TikTok)
 - 📋 **Download full playlists** — select exactly which tracks you want
 - 🎵 **Audio only** — grab just the MP3 or M4A if that's all you need
 - 🌍 **Available in 8 languages** — English, German, Russian, French, Spanish, Portuguese, Turkish & Indonesian
