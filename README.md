@@ -17,7 +17,7 @@ A simple desktop app for downloading videos and playlists. Nothing fancy, just w
 
 ---
 
-## 🚀 How to Install & Run (For Normal Users)
+## 🚀 How to Install & Run (Simplest Way)
 
 You do **not** need to install Python, run commands, or set up any programming environment. Just follow these simple steps:
 
@@ -28,7 +28,7 @@ You do **not** need to install Python, run commands, or set up any programming e
 
 ---
 
-## 💻 For Developers (For Coders)
+## 💻 For Developers
 
 If you want to run the application from source code, modify the project, or build it yourself:
 
