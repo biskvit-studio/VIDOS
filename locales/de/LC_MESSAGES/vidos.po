@@ -50,8 +50,8 @@ msgstr "Starte Playlist-Download ({} Elemente)."
 msgid "No videos selected."
 msgstr "Keine Videos ausgewählt."
 
-msgid "1080p (Best MP4)"
-msgstr "1080p (Beste Qualität, MP4)"
+msgid "1080p (Full HD, MP4)"
+msgstr "1080p (Full HD, MP4)"
 
 msgid "720p (HD MP4)"
 msgstr "720p (HD, MP4)"

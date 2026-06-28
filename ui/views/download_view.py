@@ -142,7 +142,7 @@ class DownloadView(ft.ListView):
             options=[
                 ft.dropdown.Option("2160p", _("4K (2160p Best)")),
                 ft.dropdown.Option("1440p", _("2K (1440p)")),
-                ft.dropdown.Option("1080p", _("1080p (Best MP4)")),
+                ft.dropdown.Option("1080p", _("1080p (Full HD, MP4)")),
                 ft.dropdown.Option("720p", _("720p (HD MP4)")),
                 ft.dropdown.Option("480p", _("480p (SD MP4)")),
                 ft.dropdown.Option("mp3", _("Audio Only (MP3)")),

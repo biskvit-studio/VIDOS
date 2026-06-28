@@ -50,8 +50,8 @@ msgstr "Начало загрузки плейлиста ({} видео)."
 msgid "No videos selected."
 msgstr "Не выбрано ни одного видео."
 
-msgid "1080p (Best MP4)"
-msgstr "1080p (Лучшее качество, MP4)"
+msgid "1080p (Full HD, MP4)"
+msgstr "1080p (Full HD, MP4)"
 
 msgid "720p (HD MP4)"
 msgstr "720p (HD, MP4)"

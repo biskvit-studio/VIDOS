@@ -50,8 +50,8 @@ msgstr "Début du téléchargement de la playlist ({} éléments)."
 msgid "No videos selected."
 msgstr "Aucune vidéo sélectionnée."
 
-msgid "1080p (Best MP4)"
-msgstr "1080p (Meilleure qualité, MP4)"
+msgid "1080p (Full HD, MP4)"
+msgstr "1080p (Full HD, MP4)"
 
 msgid "720p (HD MP4)"
 msgstr "720p (HD, MP4)"
