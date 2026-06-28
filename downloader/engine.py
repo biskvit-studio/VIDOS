@@ -58,7 +58,8 @@ class DownloadEngine:
                 'title': info.get('title') or 'Unnamed Playlist',
                 'url': url,
                 'entries': entries,
-                'thumbnail': info.get('thumbnails', [{}])[0].get('url') if info.get('thumbnails') else None
+                'thumbnail': info.get('thumbnails', [{}])[0].get('url') if info.get('thumbnails') else None,
+                'extractor': info.get('extractor_key', 'Generic').lower()
             }
         else:
             ydl_opts_full = {
@@ -77,7 +78,8 @@ class DownloadEngine:
                 'thumbnail': full_info.get('thumbnail'),
                 'uploader': full_info.get('uploader') or 'Unknown Creator',
                 'id': full_info.get('id'),
-                'description': full_info.get('description', '')[:200]
+                'description': full_info.get('description', '')[:200],
+                'extractor': full_info.get('extractor_key', 'Generic').lower()
             }
 
     @classmethod
