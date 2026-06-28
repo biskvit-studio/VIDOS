@@ -179,10 +179,11 @@ class HistoryView(ft.Column):
                                     max_lines=1,
                                     overflow=ft.TextOverflow.ELLIPSIS,
                                     font_family="Montserrat-Regular",
-                                    width=250
+                                    expand=True
                                 )
                             ],
-                            spacing=6
+                            spacing=6,
+                            expand=True
                         )
                     ],
                     expand=True,
