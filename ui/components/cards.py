@@ -32,6 +32,36 @@ class VideoMetadataCard(ShadcnCard):
         else:
             duration_str = "Unknown"
 
+        extractor = (metadata.get('extractor') or 'youtube').lower()
+        is_vertical = extractor == 'tiktok'
+        thumb_width = 90 if is_vertical else 180
+        thumb_height = 135 if is_vertical else 100
+
+        # Build platform brand badge
+        badge_text = extractor.capitalize()
+        if extractor == 'youtube':
+            badge_bg = "#22FF0000"
+            badge_fg = "#FF0000"
+        elif extractor == 'vimeo':
+            badge_bg = "#221AB7EA"
+            badge_fg = "#1AB7EA"
+        elif extractor == 'tiktok':
+            badge_bg = "#2200F5FF"
+            badge_fg = "#00F5FF"
+            badge_text = "TikTok"
+        else:
+            badge_bg = "#22808080"
+            badge_fg = colors.text_muted
+            badge_text = "Web"
+
+        platform_badge = ft.Container(
+            content=ft.Text(badge_text, size=10, weight=ft.FontWeight.BOLD, color=badge_fg),
+            bgcolor=badge_bg,
+            border_radius=6,
+            padding=ft.Padding.symmetric(horizontal=8, vertical=3),
+            alignment=ft.alignment.center,
+        )
+
         card_content = ft.Row(
             [
                 # Thumbnail
@@ -39,8 +69,8 @@ class VideoMetadataCard(ShadcnCard):
                     content=ft.Image(
                         src=metadata.get('thumbnail') or "https://placehold.co/600x400/png",
                         fit=ft.BoxFit.COVER,
-                        width=180,
-                        height=100,
+                        width=thumb_width,
+                        height=thumb_height,
                         border_radius=8,
                     ),
                     border_radius=8,
@@ -60,6 +90,7 @@ class VideoMetadataCard(ShadcnCard):
                         ),
                         ft.Row(
                             [
+                                platform_badge,
                                 ft.Icon(ft.Icons.PERSON, size=14, color=colors.text_muted),
                                 ft.Text(metadata.get('uploader', 'Unknown'), size=13, color=colors.text_muted),
                                 ft.VerticalDivider(width=1, color=colors.border),
